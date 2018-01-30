@@ -1,0 +1,99 @@
+body {
+  background-color: #dcbb9a;
+  padding: 10px 280px;
+  color: #000; }
+
+#content {
+  background-color: #ffffff;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+  width: 1000px; }
+  #content a {
+    color: #3d70a1; }
+
+h1 {
+  text-align: center; }
+
+h1,
+h2 {
+  color: #893c00; }
+
+.img-left {
+  border: 2px solid #893c00;
+  float: left;
+  margin-right: 20px;
+  outline-offset: 10px;
+  padding: 2px; }
+
+.brief {
+  background-color: #fadcba;
+  color: #000;
+  display: block;
+  float: left;
+  height: 50px;
+  margin-right: 15px;
+  padding: 15px;
+  width: 380px; }
+
+.img-right {
+  border: 2px solid #893c00;
+  float: right;
+  margin-left: 20px;
+  outline-offset: 10px;
+  padding: 2px; }
+
+table {
+  border-spacing: 1px 0;
+  text-indent: 10px;
+  width: 95%; }
+  table caption {
+    color: #000;
+    text-align: right; }
+  table tr {
+    height: 40px; }
+    table tr th {
+      background-color: #e0e0e0;
+      color: #000;
+      font-weight: normal;
+      text-align: left;
+      text-transform: uppercase; }
+    table tr td {
+      border-bottom: 1px solid #e0e0e0; }
+
+form {
+  color: #808080; }
+  form > div {
+    margin-top: 20px; }
+  form input {
+    height: 25px;
+    text-indent: 7px;
+    width: 100%; }
+  form textarea {
+    text-indent: 7px;
+    width: 100%; }
+  form label {
+    color: #808080; }
+
+.first-part {
+  display: inline-flex;
+  width: 100%; }
+
+.feedback-title {
+  margin-bottom: 0; }
+
+.field-right {
+  margin-left: 2%; }
+
+.field-right,
+.field-left {
+  width: 49%; }
+
+.submit-btn {
+  background-color: #ffffff;
+  border: 1px solid #3d70a1;
+  color: #3d70a1;
+  font-size: 18px;
+  height: 45px;
+  margin-top: 25px;
+  width: 240px; }

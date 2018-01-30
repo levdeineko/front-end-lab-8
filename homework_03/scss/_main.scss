@@ -1,0 +1,158 @@
+$backgr-color-bd:null !default;
+$backgr-color-cont:null !default;
+$header-col:null !default;
+$bri-col:null !default;
+$bri-h:null !default;
+$bri-w:null !default;
+$b-flo:null !default;
+$b-ma:null !default;
+$hyperl-color:null !default;
+$table-col:null !default;
+$for-col:null !default;
+$table-back-col:null !default;
+$body-text-color:#000 !default;
+$brief-color:#000 !default;
+$label-col:null !default;
+$margtop-img:null !default;
+$margin-bri:null !default;
+$h1upper:null !default;
+
+
+@mixin bbody($color) {
+  background-color: $color;
+  padding: 10px 280px;
+}
+
+body {
+  @include bbody($backgr-color-bd);
+  color: $body-text-color;
+}
+
+#content {
+  background-color: $backgr-color-cont;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+  width: 1000px;
+
+  a {
+    color: $hyperl-color;
+  }
+}
+
+h1 {
+  text-align: center;
+  text-transform: $h1upper;
+}
+
+h1,
+  h2 {
+  color: $header-col;
+}
+
+.img-left {
+  border: 2px solid $header-col;
+  float: left;
+  margin-right: 20px;
+  outline-offset: 10px;
+  padding: 2px;
+}
+
+.brief {
+  background-color: $bri-col;
+  color: $brief-color;
+  display: block;
+  float: $b-flo;
+  height: $bri-h;
+  margin-right: $margin-bri;
+  padding: 15px;
+  width: $bri-w;
+}
+
+.img-right {
+  border: 2px solid $header-col;
+  float: right;
+  margin-left: 20px;
+  margin-top: $margtop-img;
+  outline-offset: 10px;
+  padding: 2px;
+}
+
+table {
+  background-color: $table-back-col;
+  border-spacing: 1px 0;
+  text-indent: 10px;
+  width: 95%;
+
+  caption {
+    color: $brief-color;
+    text-align: right;
+  }
+
+  tr {
+    height: 40px;
+
+    th {
+      background-color: $table-col;
+      color: $brief-color;
+      font-weight: normal;
+      text-align: left;
+      text-transform: uppercase;
+    }
+
+    td {
+      border-bottom: 1px solid $table-col;
+    }
+  }
+}
+
+form {
+  color: $for-col;
+
+  >div {
+    margin-top: 20px;
+  }
+
+  input {
+    height: 25px;
+    text-indent: 7px;
+    width: 100%;
+  }
+
+  textarea {
+    text-indent: 7px;
+    width: 100%;
+  }
+
+  label {
+    color: $label-col;
+  }
+}
+
+.first-part {
+  display: inline-flex;
+  width: 100%;
+}
+
+.feedback-title {
+  margin-bottom: 0;
+}
+
+.field-right {
+  margin-left: 2%;
+}
+
+.field-right,
+  .field-left {
+  width: 49%;
+  }
+
+.submit-btn {
+  background-color: $backgr-color-cont;
+  border: 1px solid $hyperl-color;
+  color: $hyperl-color;
+  font-size: 18px;
+  height: 45px;
+  margin-top: 25px;
+  width: 240px;
+}
