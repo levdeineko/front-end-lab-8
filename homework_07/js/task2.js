@@ -32,9 +32,8 @@ for(let i=1,j=1;;i++,j+=2){
           var ques1=confirm("Do you want to play again?",'');
           if (ques1==false){
             break;
-          }
-
         }
       }
     }
+  }
 }
