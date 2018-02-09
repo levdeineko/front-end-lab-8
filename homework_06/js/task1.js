@@ -21,9 +21,7 @@ if ((a*a+b*b===c*c) || (a*a+c*c===b*b) || (c*c+b*b===a*a)){
 function area(a,b,c) {
   var p = (a+b+c)/2;
   var area = Math.sqrt(p*(p-a)*(p-b)*(p-c));
-  if(!area.toString().includes('.'))
-  return area;
-  else return  area.toFixed(2);
+  return  parseFloat(area.toFixed(2));
 }
 
 
