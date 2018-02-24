@@ -1,0 +1,54 @@
+
+* {
+    margin:0;
+}
+
+body {
+    padding: 1%;
+    font-size: 1em;
+}
+
+.material-icons {
+    vertical-align: bottom;
+    font-size: 1.3em;
+}
+
+.material-icons.initial {
+    color: #ffcc00;
+}
+
+.material-icons.content {
+    color: #808080;
+}
+
+ul {
+    margin-left: 1%;
+    padding-left: 0;
+}
+
+ul.empty-directory {
+    margin-left:0;
+    font-style: italic;
+}
+
+.empty-directory{
+  display:none;
+}
+
+#root > ul:first-child {
+    margin:0;
+}
+
+li {
+    list-style-type: none;
+}
+
+li a {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+}
+
+li a:hover {
+    background-color: #efefef;
+}
